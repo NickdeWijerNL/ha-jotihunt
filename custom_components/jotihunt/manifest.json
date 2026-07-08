@@ -1,0 +1,12 @@
+{
+  "domain": "jotihunt",
+  "name": "Jotihunt",
+  "codeowners": ["@NickdeWijerNL"],
+  "config_flow": true,
+  "documentation": "https://github.com/NickdeWijerNL/ha-jotihunt",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/NickdeWijerNL/ha-jotihunt/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

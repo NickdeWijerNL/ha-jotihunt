@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jotihunt",
+        "description": "Verbind met de publieke Jotihunt API. Er is geen account of API-sleutel nodig.",
+        "data": {
+          "update_interval": "Update-interval (seconden)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Jotihunt is al geconfigureerd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Update-interval (seconden)"
+        }
+      }
+    }
+  }
+}

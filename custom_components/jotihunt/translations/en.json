@@ -1,0 +1,25 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Jotihunt",
+        "description": "Connect to the public Jotihunt API. No account or API key required.",
+        "data": {
+          "update_interval": "Update interval (seconds)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Jotihunt is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "update_interval": "Update interval (seconds)"
+        }
+      }
+    }
+  }
+}
