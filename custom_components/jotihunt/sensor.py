@@ -50,7 +50,7 @@ class JotihuntAreaSensor(CoordinatorEntity[JotihuntUpdateCoordinator], SensorEnt
         self._attr_name = area_name
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, entry.entry_id)},
-            name="Jotihunt",
+            name="Areas",
             manufacturer="Jotihunt",
             entry_type="service",
         )
