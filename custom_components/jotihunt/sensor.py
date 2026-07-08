@@ -52,7 +52,6 @@ class JotihuntAreaSensor(CoordinatorEntity[JotihuntUpdateCoordinator], SensorEnt
             identifiers={(DOMAIN, entry.entry_id)},
             name="Jotihunt",
             manufacturer="Jotihunt",
-            model="Areas",
             entry_type="service",
         )
 
