@@ -10,7 +10,7 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import AREA_STATUS_ICONS, DEFAULT_ICON, DOMAIN
+from .const import AREA_ICON, DOMAIN
 from .coordinator import JotihuntUpdateCoordinator
 
 
@@ -39,6 +39,7 @@ class JotihuntAreaSensor(CoordinatorEntity[JotihuntUpdateCoordinator], SensorEnt
     """Representeert de status van één Jotihunt area (gebied)."""
 
     _attr_has_entity_name = True
+    _attr_icon = AREA_ICON
 
     def __init__(
         self, coordinator: JotihuntUpdateCoordinator, entry: ConfigEntry, area_name: str
@@ -69,12 +70,6 @@ class JotihuntAreaSensor(CoordinatorEntity[JotihuntUpdateCoordinator], SensorEnt
     def native_value(self) -> str | None:
         data = self._area_data
         return data["status"] if data else None
-
-    @property
-    def icon(self) -> str:
-        data = self._area_data
-        status = data["status"] if data else None
-        return AREA_STATUS_ICONS.get(status, DEFAULT_ICON)
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:

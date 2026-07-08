@@ -20,9 +20,4 @@ BACKOFF_MULTIPLIER = 2
 # zijn en de coordinator flink laten afkoelen.
 MAX_CONSECUTIVE_429 = 3
 
-AREA_STATUS_ICONS = {
-    "green": "mdi:map-marker-check",
-    "orange": "mdi:map-marker-alert",
-    "red": "mdi:map-marker-remove",
-}
-DEFAULT_ICON = "mdi:map-marker-question"
+AREA_ICON = "mdi:map-marker-radius"
